@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearts2Hearts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER  -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <!-- LOGO  -->
+            <a href="#" class="logo-brand">
+                <img src="images/logo-h2h.png" alt="Hearts2Hearts Logo" class="logo-img">
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#grup">Home</a>
+                <a href="#tentang-grup">About</a>
+                <a href="#members-grid">Members</a>
+                <a href="#solo-section">Member Profile</a>
+                <a href="#sosmed">Social Media</a>
+            </nav>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section id="grup" class="hero-banner">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Hearts2Hearts</h1>
+            <p class="hero-subtitle">Member Profiles</p>
+        </div>
+    </section>
+
+   <!-- INTRODUCE GRUP -->
+    <section id="tentang-grup" class="section reveal">
+        <div class="container text-center">
+            <h2 class="section-title">About Hearts2Hearts</h2>
+            
+            <div class="group-description">
+                <p class="info-block">
+                    Hearts2Hearts (하츠투하츠), also shortened as H2H, is an 8-member South Korean girl group under SM Entertainment. 
+                    The members are: Jiwoo, Carmen, Yuha, Stella, Juun, A-na, Ian, and Ye-on. They debuted on February 24, 2025, with their first single album, The Chase. 
+                    They made their Japanese debut on August 10, 2026, with their first single, Iconic Heart.
+                </p>
+                
+                <p class="info-block">
+                    <strong>Group Name Meaning:</strong> 
+                    The name means they will connect with global fans through their own mysterious and beautiful music world filled with various emotions and heartfelt messages, and move forward together as a greater "us".
+                </p>
+                
+                <p class="info-highlight">
+                    <strong>Official Greeting:</strong> 
+                    “Hello, we are Hearts2Hearts!”
+                </p>
+                
+                <div class="fandom-info-card">
+                    <p class="info-highlight">
+                        <strong>Hearts2Hearts Official Fandom Name:</strong> 
+                        S2U (하츄)
+                    </p>
+                    <p class="info-block">
+                        <strong>Fandom Name Meaning:</strong> 
+                        S2 has the shape of a heart, and since their group name has S2 in the middle, the “U” was added to symbolize that the fans will always be at the center and will keep staying by their side.
+                    </p>
+                    <p class="info-highlight">
+                        <strong>Hearts2Hearts Official Color:</strong> 
+                        Sky Blue
+                    </p>
+                    <p class="info-highlight">
+                        <strong>Hearts2Hearts Official Mascot:</strong> Falabella
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8 Member -->
+    <section id="members-grid" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Members</h2>
+            <p class="section-subtitle">Click their photo and get to know each member better!</p>
+            
+            <div class="member-cards-container">
+                
+                <!-- JIWOO -->
+                <div class="member-card" onclick="selectMember('jiwoo')">
+                    <div class="img-box">
+                        <img src="images/jiwoo.jpg" alt="Jiwoo">
+                    </div>
+                    <h3>Jiwoo (지우)</h3>
+                    <p>Leader, Dancer, Rapper, Vocalist, Visual</p>
+                </div>
+
+                <!-- CARMEN -->
+                <div class="member-card" onclick="selectMember('carmen')">
+                    <div class="img-box">
+                        <img src="images/carmen.jpg" alt="Carmen">
+                    </div>
+                    <h3>Carmen (카르멘)</h3>
+                    <p>Vocalist</p>
+                </div>
+
+                <!-- YUHA -->
+                <div class="member-card" onclick="selectMember('yuha')">
+                    <div class="img-box">
+                        <img src="images/yuha.jpg" alt="Yuha">
+                    </div>
+                    <h3>Yuha (유하)</h3>
+                    <p>Vocalist, Dancer</p>
+                </div>
+
+                <!-- STELLA -->
+                <div class="member-card" onclick="selectMember('stella')">
+                    <div class="img-box">
+                        <img src="images/stella.jpg" alt="Stella">
+                    </div>
+                    <h3>Stella (스텔라)</h3>
+                    <p>Vocalist</p>
+                </div>
+
+                <!--JUUN -->
+                <div class="member-card" onclick="selectMember('juun')">
+                    <div class="img-box">
+                        <img src="images/juun.jpg" alt="Juun">
+                    </div>
+                    <h3>Juun (주은)</h3>
+                    <p>Main Dancer, Rapper, Vocalist</p>
+                </div>
+
+                <!-- A-NA -->
+                <div class="member-card" onclick="selectMember('ana')">
+                    <div class="img-box">
+                        <img src="images/ana.jpg" alt="A-na">
+                    </div>
+                    <h3>A-na (에이나)</h3>
+                    <p>Rapper, Vocalist, Visual</p>
+                </div>
+
+                <!-- IAN -->
+                <div class="member-card" onclick="selectMember('ian')">
+                    <div class="img-box">
+                        <img src="images/ian.jpg" alt="Ian">
+                    </div>
+                    <h3>Ian (이안)</h3>
+                    <p>Dancer, Vocalist, Visual, Center</p>
+                </div>
+
+                <!-- YE-ON -->
+                <div class="member-card" onclick="selectMember('yeon')">
+                    <div class="img-box">
+                        <img src="images/yeon.jpg" alt="Ye-on">
+                    </div>
+                    <h3>Ye-on (예온)</h3>
+                    <p>Vocalist, Maknae</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- member profile -->
+    <section id="solo-section" class="section bg-pink reveal">
+        <div class="container">
+            <h2 class="section-title">Member Profile</h2>
+
+            <!-- kotak pilih pilih member -->
+            <div class="member-tabs" id="memberTabs">
+                <button class="tab-btn active" data-member="jiwoo">JIWOO</button>
+                <button class="tab-btn" data-member="carmen">CARMEN</button>
+                <button class="tab-btn" data-member="yuha">YUHA</button>
+                <button class="tab-btn" data-member="stella">STELLA</button>
+                <button class="tab-btn" data-member="juun">JUUN</button>
+                <button class="tab-btn" data-member="ana">A-NA</button>
+                <button class="tab-btn" data-member="ian">IAN</button>
+                <button class="tab-btn" data-member="yeon">YE-ON</button>
+            </div>
+
+            <!-- profil member sendiri sendiri -->
+            <div class="solo-profile-display" id="soloDisplay">
+                <div class="profile-layout">
+                    <!-- FOTO MEMBER -->
+                    <div class="solo-img-wrapper">
+                        <img id="soloImg" src="images/jiwoo.jpg" alt="Member Profile">
+                    </div>
+
+                    <!-- isi biodata -->
+                    <div class="solo-bio-content">
+                        <h3 id="soloName">Jiwoo (지우)</h3>
+                        <span class="role-badge" id="soloRole">Leader, Dancer, Rapper, Vocalist, Visual</span>
+                        
+                        <div class="bio-text" id="soloBio">
+                            <p>Jiwoo is a dependable and organized member with a shy yet charming personality. 
+                                After six years of training, she brings her bright energy and unique talents to Hearts2Hearts. 
+                                A former ballet student who loves strawberries, perfumes, amusement parks, and snowy days, 
+                                Jiwoo is also known for her love of photography and her adorable dog, Kong.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section sosmed -->
+    <section id="sosmed" class="section reveal">
+        <div class="container text-center">
+            <h2 class="section-title">Keep Up With Hearts2Hearts</h2>
+            <p class="section-subtitle">Stay connected and never miss a moment with Hearts2Hearts.</p>
+            
+            <div class="social-links-container">
+                <a href="https://www.instagram.com/hearts2hearts" target="_blank" class="social-btn instagram">Instagram</a>
+                <a href="https://twitter.com/hearts2hearts" target="_blank" class="social-btn twitter">Twitter / X</a>
+                <a href="https://www.tiktok.com/@hearts2hearts" target="_blank" class="social-btn tiktok">TikTok</a>
+                <a href="https://www.youtube.com/@hearts2hearts.official" target="_blank" class="social-btn youtube">YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Hearts2Hearts. Made with Love.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
